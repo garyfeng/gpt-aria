@@ -10,6 +10,9 @@ Running:
 * run `npm install`
 * run `export OPENAI_API_KEY=<your key>`
 * Run gpt-aria: `./gpt-aria.ts --objective "Whats the price of iphone 13 pro"`
+  - I ran into an error where `/usr/bin/env: ‘node --loader tsx’: No such file or directory`
+  - fix: make `tsx` a global cli: `npm install --global tsx`
+  - run: `tsx ./gpt-aria.ts --objective "Who was king of england when lviv was founded"  --headless`
 * Note first run will take a while as puppeteer has to download chrome
 * Run it starting custom start page: `./gpt-aria.ts --objective "Whats the price of iphone 14 pro" --start-url https://duckduckgo.com`
 
